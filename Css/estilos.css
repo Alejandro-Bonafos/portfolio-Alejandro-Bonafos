@@ -1097,7 +1097,7 @@ footer h3{
   display: none;
 }
 .contenedor{
-    background-image: url(/img/teclado.jpg);
+    background-image: url(img/teclado.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
