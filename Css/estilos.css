@@ -655,7 +655,7 @@ opacity: 0.5s;
 }
 .el:nth-child(1) .el__bg:before {
   transition-delay: 0.1s;
-  background-image: url('img/certii-utn.jpg');
+  background-image: url('../img/certii-utn.jpg');
   background-position:1rem ;
   background-repeat:no-repeat;
   background-size:contain;
@@ -677,7 +677,7 @@ opacity: 0.5s;
 }
 .el:nth-child(2) .el__bg:before {
   transition-delay: 0.3s;
-  background-image: url('img/Certificado-CoderHouse.jpg');
+  background-image: url('../img/Certificado-CoderHouse.jpg');
   background-position:4rem ;
   background-repeat:no-repeat;
   background-size:contain;
@@ -699,7 +699,7 @@ opacity: 0.5s;
 }
 .el:nth-child(3) .el__bg:before {
   transition-delay: 0.2s;
-  background-image: url('img/certificado-Js-Coder.jpg');
+  background-image: url('../img/certificado-Js-Coder.jpg');
   background-position:center ;
   background-repeat:no-repeat;
   background-size:contain;
@@ -721,7 +721,7 @@ opacity: 0.5s;
 }
 .el:nth-child(4) .el__bg:before {
   transition-delay: 0.3s;
-  background-image: url('img/certificado-react.jpg');
+  background-image: url('../img/certificado-react.jpg');
   background-position:right;
   background-repeat:no-repeat;
   background-size:contain;
