@@ -1635,7 +1635,7 @@ footer h3{
 
 
 /* Largue devices ( landscape desktop, 1025px and 1200px) */
-@media only screen and (min-width: 1025px) and (max-width: 1200px) /* {
+@media only screen and (min-width: 1025px) and (max-width: 1200px)  {
   .nombre{ 
     display: flex;
     flex-direction: row;
