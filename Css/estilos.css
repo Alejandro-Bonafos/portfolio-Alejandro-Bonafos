@@ -3,9 +3,10 @@
 
 body {
   height: 100%;
+  max-width: 100% !important;
+  overflow-x: hidden !important;
   box-sizing: border-box;
   overflow-x: hidden;
-  box-sizing: border-box;
   background-image: linear-gradient(
   50deg,
   hsl(252deg 9% 10%) 0%,
@@ -24,7 +25,7 @@ body {
  width: 100%;
  height: auto;
  flex-wrap: wrap;
- padding: 16px 24px;
+ padding: 6px 4px;
 }
 .header-nombre::after {
     position: absolute;
@@ -68,7 +69,7 @@ body {
 .nombre{
     display: flex; 
     width: 50%;
-    height: 90px;
+    height: auto;
     margin-top: 30px;
     flex-direction: column;  
 }
@@ -116,19 +117,26 @@ body {
 
 .nombre span{
   display: flex;
-  justify-content: start;
   margin: auto;
   font-size: 2rem;
   font-family: 'Lora', serif;
   color: rgb(170, 168, 192);
 }
 
+.reloj{
+  display: flex;
+  flex-direction: row;
+  width: 10%;
+  height: 30px;
+  margin-left: 33rem;
+}
+
 .clock {
     font-size: 17px;
     font-weight: bold;
     color: rgb(255, 235, 253);
-    margin-left: 32rem;
     margin-top: 2px;
+    margin: auto;
 }
 
 .nav-contenedor{
@@ -843,186 +851,14 @@ footer h3{
 
 /* ----------------------Comienzo responsive -------------------------*/
 
-/* Extra small devices (phones, 460px and down) */
-@media only screen and (min-width: 360px) and (max-width: 460px)/*{
-  
-  .nombre{ 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 5px;
-    width: 100%;
-    height: auto;
-    
-  }
-  
-  .nombre h2{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    background-color: #1b9b9018;
-    font-size: 2rem; 
-    border-radius: 10px;
-  }
-  
-  .nav-contenedor{
-    justify-content: center;
-  
-  }
-  
-  .clock{
-    display: none;
-  }
-  .contenedor{
-      background-image: url(img/teclado.jpg);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-  }
-  
-  .img-teclado{
-    display: none;
-  }
-  .subtitulo{
-    margin: auto;
-    width: 50%;
-    margin-top: 10px;
-    border-radius: 5px;
-  }
-  .subtitulo h3{
-    text-align: center;
-    font-size: 2rem;
-    font-weight: bold;
-    
-  }
-  
-  .presentacion{
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .intro { 
-    display: flex;
-    width: 90%;
-    height: auto;
-    margin-top: 5px;
-    background-color: #46454457;
-    margin-bottom: 15px;
-  }
-  .intro p{
-    width: 100%;
-    height: auto;
-    font-size: 1.5rem;
-    color: rgb(255, 255, 255);
-  }
-  
-  .header__img{
-    margin: auto;
-    border-radius: 10px;
-    width: 60%;
-    height: auto;
-    margin-top: 2px;
-    filter: none;
-  }
-  .header__img:hover{
-    opacity: 1; 
-    overflow: visible;
-    
-  }
-  
-  .card video{
-    display: none;
-    
-  }
-  
-  #contenedor-skills{
-    width: 100%;
-    height: auto;
-  
-  }
-
-  .skills-titulo{
-    margin: auto;
-    margin-top: 10px;
-    border-radius: 5px;
-    background-color: #cb67e785;
-  }
-  .skills-titulo h2{
-    text-align: center;
-    font-size: 2.5rem;
-    color: white;
-  
-  }
-  .icon-efecto {
-    align-items: center;
-    
-  }
-  #certificados h2{
-    width: 100%;
-    margin-top: 50px;
-    color: #ffffff;
-    background-color: rgba(104, 89, 240, 0.651);
-  }
-  
-  #contactos{
-    width: 100%;
-    height: auto;
-  }
-  .contenedor-tit{
-    display: flex;
-    justify-content: center;
-    width: 80%;
-    margin-top: 10px;
-  }
-
-  .contacto-tit{
-    width: 80%;
-    margin: auto;
-    border-radius: 5px;
-    background-color: #f1d327a2;
-  }
-  
-  .form-contacto{
-    display: block;
-    margin: auto;
-    width: 90%;
-    height: auto;
-    text-align: center;
-    font-size: 1.2rem;
-    padding: 5px 5px;
-    margin-top: 55px;
-  }
-
-  #contactos button{
-    width: 90%;;
-  }
-  
-  .icons-redes{
-    width: 100%;
-    justify-content: space-around;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    margin-top: 15px ; 
-  }
-
-  .icons-redes span{
-    width: 50%;
-    margin: 5px 15px;
-    
-  }
-
-  #descargar-cv p{
-    margin-top: 20px;
-    width: 80%;
-    height: auto;
-    align-items: center;
-  
-  }
-  
-  }
 
 /* Extra small devices (phones, 480px and down) */
-@media only screen and (max-width: 480px) /*{
+@media only screen and (max-width: 480px) {
+
+  html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
 
 .nombre{ 
   display: flex;
@@ -1030,24 +866,23 @@ footer h3{
   flex-wrap: wrap;
   margin-top: 5px;
   width: 100%;
-  height: 120px;
+  height: auto;
   
 }
 
 .nombre h2{
-  display: flex;
-  justify-content: center;
   width: 100%;
   background-color: #1b9b9018;
-  font-size: 2rem; 
+  font-size: 1.6rem; 
   border-radius: 10px;
+  margin-right: 20px;
 
 
 }
 
 .nav-contenedor{
   justify-content: center;
-  margin-top: 5px;
+  margin-top: 15px;
 
 }
 
@@ -1067,43 +902,45 @@ footer h3{
 .subtitulo{
   margin: auto;
   width: 50%;
-  margin-top: 10px;
+  margin-top: 15px;
   border-radius: 5px;
 }
 .subtitulo h3{
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
-  
 }
 
 .presentacion{
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 5px;
 }
+
 .intro { 
   display: flex;
-  width: 90%;
+  width: 95%;
   height: auto;
-  margin-top: 5px;
-  background-color: #46454457;
+  background-color: #4645449f;
   margin-bottom: 15px;
 }
+
 .intro p{
   width: 100%;
   height: auto;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   color: rgb(255, 255, 255);
 }
 
 .header__img{
   margin: auto;
   border-radius: 10px;
-  width: 40%;
+  width: 50%;
   height: auto;
   margin-top: 2px;
   filter: none;
 }
+
 .header__img:hover{
   opacity: 1; 
   overflow: visible;
@@ -1115,7 +952,7 @@ footer h3{
 }
 
 .proyecto-titulo{
-  width: 50%;
+  width: 60%;
   justify-content: center;
   border-radius: 5px;
 }
@@ -1128,15 +965,14 @@ footer h3{
   width: 100%;
   height: auto;
   flex-wrap: wrap;
-  padding: 5px 5px;
+  justify-content: center;
+ 
 }
 
  .card{
-  width: 35%;
+  width: 33%;
   height: auto;
-  justify-content: center;
-  align-content: flex-end;
-
+  display: flex;
 }
 
 .card-title{
@@ -1147,12 +983,14 @@ footer h3{
 }
 
 .card-text{
-  height: 290px;
+  height: 390px;
   text-align: center;
   background-color: #b9a98f1c;
   border-radius: 5px;
 
 }
+
+ 
 
 .card a{
   margin-top: 20px;
@@ -1166,45 +1004,56 @@ footer h3{
   width: 100%;
   height: auto;
 }
+
 .skills-titulo{
   margin: auto;
   margin-top: 10px;
   border-radius: 5px;
   background-color: #cb67e785;
 }
+
 .skills-titulo h2{
   text-align: center;
   font-size: 2.5rem;
   color: white;
 
 }
+
 .icon-efecto {
-  align-items: center;
-  
+  align-items: center; 
 }
+
 #certificados h2{
-  width: 60%;
+  width: 70%;
   margin-top: 50px;
   color: #ffffff;
   background-color: rgba(104, 89, 240, 0.651);
   
 }
+
 .cont{
   width: 100%;
-  height: 65vh;
+  height: 45vh;
+  padding: 5px 5px;
+  
 }
 
 .el__overflow{
-  width: 80%;
-  margin-left: 20px;
+align-content: center;
+}
+
+#contactos{
+  width: 100%;
+  height: auto;
 }
 
 .contenedor-tit{
   display: flex;
   justify-content: center;
   width: 80%;
-  margin-top: 10px;
+  margin-top: 50px;
 }
+
 .contacto-tit{
   width: 80%;
   margin: auto;
@@ -1215,34 +1064,53 @@ footer h3{
 .form-contacto{
   display: block;
   margin: auto;
-  width: 95%;
+  width: 90%;
   text-align: center;
   font-size: 1.2rem;
   padding: 5px 5px;
-  margin-top: 55px;
+  margin-top: 35px;
 }
 
 .icons-redes{
   width: 100%;
+  height:auto ;
   justify-content: space-around;
   flex-direction: row;
   flex-wrap: nowrap;
-  margin-top: 15px ;
-  
+  margin-top: 15px ; 
 }
-#descargar-cv p{
-  margin-top: 20px;
-  width: 80%;
-  height: auto;
-  align-items: center;
 
+.icons-redes span{
+  text-align: center;
+  padding: 10px 5px;
+}
+
+#descargar-cv{
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+
+}
+
+
+#descargar-cv p{
+  margin: 20px 0px;
+  width: 95%;
+  text-align: center;
+  font-size: 1.4rem;
 }
 
 }
 
 
 /* Small devices (portrait tablets and large phones, 481px and 768px) */
-@media only screen and (min-width: 481px) and (max-width: 768px)/* {
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+  html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
 
   .nombre{ 
     display: flex;
@@ -1435,27 +1303,31 @@ footer h3{
 }
 
 /* Medium devices (landscape tablets, 768px and 1024px) */
-@media only screen and (min-width: 768px) and (max-width: 1024px)/*{
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+  html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
 
   .nombre{ 
     display: flex;
     flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
     margin-top: 5px;
     width: 100%;
-    height: 90px;
+    height: auto;
     
   }
 
   .nombre span{
     width: 100%;
-    margin-left: 15px;
+    justify-content: center;
   }
   
   .nav-contenedor{
-    justify-content: flex-end;
-    margin-top: 5px;
-
+    justify-content:center;
+    margin-top: 15px;
   }
   
   .clock{
@@ -1476,15 +1348,16 @@ footer h3{
   .subtitulo{
     margin: auto;
     width: 50%;
-    margin-top: 10px;
+    margin-top: 15px;
     border-radius: 5px;
     margin-bottom: 10px;
   }
 
   .subtitulo h3{
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
+  
   }
   
   .presentacion{
@@ -1494,27 +1367,30 @@ footer h3{
 
   .intro { 
     display: flex;
-    width: 90%;
+    width: 95%;
     height: auto;
     margin-top: 5px;
-    background-color: #46454457;
-    margin-bottom: 15px;
+    background-color: #4645445b;
+    margin-bottom: 25px;
+    border-radius: 2px;
   }
+
   .intro p{
     width: 100%;
     height: auto;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: rgb(255, 255, 255);
   }
   
   .header__img{
     margin: auto;
     border-radius: 10px;
-    width: 40%;
+    width: 50%;
     height: auto;
     margin-top: 2px;
     filter: none;
   }
+
   .header__img:hover{
     opacity: 1; 
     overflow: visible; 
@@ -1539,16 +1415,18 @@ footer h3{
     height: auto;
     flex-wrap: wrap;
     padding: 5px 5px;
+    justify-content: center;
   }
   
   .card{
-    width: 37%;
+    width: 42%;
     
   }
  
   #contenedor-skills{
     width: 100%;
     height: auto;
+    margin: 20px 0px
   }
   
   .skills-titulo{
@@ -1580,7 +1458,8 @@ footer h3{
 
   .cont{
     width: 100%;
-    height: 65vh;
+    height: 55vh;
+    padding:  5px 5px;
     
   }
   
@@ -1593,7 +1472,7 @@ footer h3{
     display: flex;
     justify-content: center;
     width: 80%;
-    margin-top: 20px;
+    margin-top: 30px;
   }
   .contacto-tit{
     width: 80%;
@@ -1605,7 +1484,7 @@ footer h3{
   .form-contacto{
     display: block;
     margin: auto;
-    width: 95%;
+    width: 92%;
     text-align: center;
     font-size: 1.2rem;
     padding: 5px 5px;
@@ -1635,19 +1514,23 @@ footer h3{
 
 
 /* Largue devices ( landscape desktop, 1025px and 1200px) */
-@media only screen and (min-width: 1025px) and (max-width: 1200px) /* {
+@media only screen and (min-width: 1025px) and (max-width: 1200px)  {
+
+  .header-nombre{
+    width: 100%;
+    height: auto;
+  }
   .nombre{ 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 5px;
-    width: 100%;
-    height: 90px;
-    
+    width: 70%;
+    height: auto;
   }
 
   .nombre span{
-    width: 100%;
+    width: 50%;
     margin-left: 15px;
   }
   
@@ -1656,28 +1539,12 @@ footer h3{
   
   }
 
-  .clock{
-    display: none;
-   
-  }
+  .reloj{
+  width: 15%;
+  height: 30px;
+  margin-left: 9.5rem;
   
-  .subtitulo{
-    margin: auto;
-    width: 50%;
-    margin-top: 10px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-  }
-
-  .subtitulo h3{
-    text-align: center;
-    font-size: 2rem;
-    font-weight: bold;
-  }
   
-  .presentacion{
-    flex-wrap: nowrap;
-    justify-content: center;
   }
 
   .intro { 
@@ -1685,7 +1552,6 @@ footer h3{
     width: 60%;
     height: auto;
     margin-top: 15px;
-    background-color: #46454457;
     margin-bottom: 5px;
     margin-left: 10px;
     
@@ -1711,13 +1577,8 @@ footer h3{
     overflow: visible; 
   }
   
-  #proyectos{
-    justify-content: center;
-  }
-  
   .proyecto-titulo{
-    width: 50%;
-    justify-content: center;
+    width: 40%;
     border-radius: 5px;
   }
   
@@ -1733,10 +1594,6 @@ footer h3{
     padding: 5px 5px;
   }
   
-  .card{
-    width: 37%;
-    
-  }
  
   #contenedor-skills{
     width: 100%;
@@ -1744,14 +1601,12 @@ footer h3{
   }
   
   .skills-titulo{
-    margin: auto;
     margin-top: 10px;
     border-radius: 2px;
     background-color: #cb67e71f;
   }
 
   .skills-titulo h2{
-    text-align: center;
     font-size: 2.5rem;
     color: white;
   
@@ -1763,7 +1618,7 @@ footer h3{
   }
 
   #certificados h2{
-    width: 60%;
+    width: 40%;
     margin-top: 50px;
     color: #ffffff;
     background-color: rgba(104, 89, 240, 0.651);
@@ -1773,6 +1628,7 @@ footer h3{
   .cont{
     width: 100%;
     height: 65vh;
+    
     
   }
   
@@ -1784,9 +1640,10 @@ footer h3{
   .contenedor-tit{
     display: flex;
     justify-content: center;
-    width: 80%;
+    width: 70%;
     margin-top: 20px;
   }
+
   .contacto-tit{
     width: 80%;
     margin: auto;
@@ -1797,11 +1654,11 @@ footer h3{
   .form-contacto{
     display: block;
     margin: auto;
-    width: 80%;
+    width:60%;
     height: auto;
     text-align: center;
     font-size: 1.2rem;
-    padding: 5px 5px;
+    padding: 10px 5px;
     margin-top: 55px;
   }
   
