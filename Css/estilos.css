@@ -1022,7 +1022,7 @@ footer h3{
   }
 
 /* Extra small devices (phones, 480px and down) */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) /*{
 
 .nombre{ 
   display: flex;
@@ -1242,7 +1242,7 @@ footer h3{
 
 
 /* Small devices (portrait tablets and large phones, 481px and 768px) */
-@media only screen and (min-width: 481px) and (max-width: 768px) {
+@media only screen and (min-width: 481px) and (max-width: 768px)/* {
 
   .nombre{ 
     display: flex;
@@ -1435,7 +1435,7 @@ footer h3{
 }
 
 /* Medium devices (landscape tablets, 768px and 1024px) */
-@media only screen and (min-width: 768px) and (max-width: 1024px){
+@media only screen and (min-width: 768px) and (max-width: 1024px)/*{
 
   .nombre{ 
     display: flex;
@@ -1635,7 +1635,7 @@ footer h3{
 
 
 /* Largue devices ( landscape desktop, 1025px and 1200px) */
-@media only screen and (min-width: 1025px) and (max-width: 1200px)  {
+@media only screen and (min-width: 1025px) and (max-width: 1200px) /* {
   .nombre{ 
     display: flex;
     flex-direction: row;
