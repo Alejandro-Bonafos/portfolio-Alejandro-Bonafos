@@ -844,7 +844,7 @@ footer h3{
 /* ----------------------Comienzo responsive -------------------------*/
 
 /* Extra small devices (phones, 460px and down) */
-@media only screen and (min-width: 360px) and (max-width: 460px){
+@media only screen and (min-width: 360px) and (max-width: 460px)/*{
   
   .nombre{ 
     display: flex;
