@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Alejandro</title>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="Css/estilos.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">  <!-- Google Fonts  -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Alejandro</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="Css/estilos.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">  <!-- Google Fonts  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -83,25 +83,28 @@
     </div>
   </div>
 
-  <div id="proyectos"
-  data-aos-anchor-placement="center-center">
-    <div class="proyecto-titulo"data-aos="fade-down-right">
-      <h2> Proyectos</h2>
-    </div>
-    <div class="contenedor-card" data-aos="fade-up">
-      <div class="card">
-        <video class="card-img-top" src="img/videos/Francia-cafe.mp4" width="500" height="250" autoplay controls> alt="Card image cap" </video>  
+  <div class="proyecto-titulo"data-aos="fade-down-right">
+    <h2> Proyectos</h2>
+  </div>
+  <div id="proyectos" data-aos="fade-left">>
+    <input type="radio" name="position" checked />
+    <input type="radio" name="position" />
+    <input type="radio" name="position" />
+    <input type="radio" name="position" />
+    
+    <main id="carousel">
+      <div class="item">  <video src="/img/videos/Francia-cafe.mp4" width="450" height="250" autoplay controls> alt="Card image cap" </video> 
         <div class="card-body">
           <h4 class="card-title">"Café Francia"</h4>
           <p class="card-text">
             Este sitio fue realizado para la entrega final en el curso de Desarrollo web para coder House.
             Se desarrollo usando html, css,sass y bootstrap.
           </p>
-          <a href=" https://alejandro-bonafos.github.io/Proyecto-final/" target="_blank" class="btn btn-outline-primary">Ir al sitio</a>
+          <a href=" https://alejandro-bonafos.github.io/Proyecto-final/ " target="_blank" class="btn btn-outline-primary">Ir al sitio</a>
         </div>
       </div>
-
-      <div class="card">
+      
+      <div class="item"> 
         <video class="card-img-top" src="img/videos/F1 — .mp4" width="500" height="250" autoplay controls preload="auto"> alt="Card image cap" </video>  
         <div class="card-body">
           <h4 class="card-title">Site F1 card's"</h4>
@@ -111,18 +114,20 @@
           <a href=" https://alejandro-bonafos.github.io/Proyecto-final/ " target="_blank" class="btn btn-outline-primary">Ir al sitio</a>
         </div>
       </div>
-      <div class="card">
+
+      <div class="item">
         <video class="card-img-top" src="img/videos/canni.mp4" width="500" height="250" autoplay controls> alt="Card image cap" </video>  
         <div class="card-body">
           <h4 class="card-title">Cannin Store"</h4>
           <p class="card-text">
-            Proyecto en desarrollo con html,css y JavaScript. El mismo aun no esta finalizado ya que faltan algunas funcionalidades y algunos arreglos esteticos.
+            Proyecto E-Commerce en desarrollo con html,css y JavaScript. El mismo aun no esta finalizado ya que faltan funcionalidades y arreglos esteticos.
           </p>
-          <a href=" https://alejandro-bonafos.github.io/Proyecto-final/" target="_blank" class="btn btn-outline-primary">Ir al sitio</a>
+          <a href=" https://alejandro-bonafos.github.io/canniStoree/" target="_blank" class="btn btn-outline-primary">Ir al sitio</a>
         </div>
       </div>
-      <div class="card">
-        <video class="card-img-top" src="img/videos/Calculadora Js - Google Chrome 2022-12-29 04-29-23.mp4" width="500" height="250" autoplay controls muted preload="auto"> alt="Card image cap" </video>  
+
+      <div class="item">
+          <video class="card-img-top" src="img/videos/Calculadora Js - Google Chrome 2022-12-29 04-29-23.mp4" width="500" height="250" autoplay controls muted preload="auto"> alt="Card image cap" </video>  
         <div class="card-body">
           <h4 class="card-title">Calculadora Js</h4>
           <p class="card-text">
@@ -131,8 +136,10 @@
           <a href=" https://alejandro-bonafos.github.io/CalculadoraJs/ " target="_blank" class="btn btn-outline-primary">Ir al sitio</a>
         </div>
       </div>
-    </div>
+      
+    <main>
   </div>
+ 
 
   <div id="contenedor-skills">
     <div class="skills">
@@ -258,29 +265,23 @@
       </div>
     </div>
 
-    <div class="form-contacto"data-aos="zoom-in-down">
+    <div class="form-contacto" data-aos="zoom-in-down">
+      <form action="https://formsubmit.co/alejandro.bonafos@gmail.com" method="POST">
+
       <div class="contacto__formulario__contenedor">
-        <input type="text" class="contacto__formulario__contenedor__input" name="entry.1868322132" id="entry.1868322132">
-          <label for="name" class="contact-label">Nombre</label>
-        <span class="animated-border"></span>
+        <input class="input" type="text" name="nombre" placeholder="Nombre">
+        <input class="input" type="text" name=" Email" placeholder="Email">
+        <input class="input" type="text" name=" Asunto" placeholder="Asunto">
       </div>
-      <div class="contacto__formulario__contenedor">
-        <input type="email" class="contacto__formulario__contenedor__input" name="entry.1726531011" id="entry.1726531011">
-        <label for="email" class="contact-label">E-mail</label>
-        <span class="animated-border"></span>
-      </div>
-      <div class="contacto__formulario__contenedor">
-        <input type="text" class="contacto__formulario__contenedor__input" name="entry.1661223133" id="entry.1661223133">
-        <label for="subject" class="contact-label">Asunto</label>
-        <span class="animated-border"></span>
-      </div>
-      <div class="contacto__formulario__contenedor">
-        <textarea class="contacto__formulario__contenedor__input" name="entry.121261829" id="entry.121261829" rows="5" cols="99"></textarea>
-        <label for="message" class="contact-label">Mensaje</label>
-        <span class="animated-border"></span>
+
+      <div class="contacto__formulario__contenedorTex">
+        <textarea name=" Mensaje" placeholder="Menseje" rows="10" cols="90"></textarea>
+        
+      
       </div>
       <button id="submit" type="submit">Enviar Mensaje</button>
     </div>
+    </form>
   
 
     <div class=" icons-redes" data-aos="fade-left">
@@ -303,13 +304,20 @@
         <span>/Alejandro-Bonafos</span>
       </a>
       </div>
+
+      <div class="icon-Email">
+        <a href="https://www.google.com/intl/es-419/gmail/about/">
+        <img src="img/icons/gmail.png" alt="Gmail">
+        <span>alejandro.bonafos@gmail.com</span>
+      </a>
+      </div>
       
     </div>
   </div>
 
   <div id="descargar-cv">
     <p> Te comparto mi curriculum por si te interesa descargarlo y asi saber un poco mas sobre mis conocimientos y experiencia laboral.</p>
-    <a href="documentos/Cv Bonafos Alejandro-2022.pdf" download="Curriculum Bonafos Alejandro">
+    <a href="documentos/Cv-Bonafos-Alejandro-2023.pdf" download="Curriculum Bonafos Alejandro">
       <img src="img/archivo.png" alt=""
       width="100px" height="100px">
     
