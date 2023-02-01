@@ -27,3 +27,14 @@ const showTime = () => {
 
 }
 showTime();
+
+function saludoFinal () {document.getElementById("submit"),
+     swal.fire({
+        title: 'Gracias por contactarte, Sludos!',
+        icon: 'success',
+        text: 'Estamos en contacto 👍'
+    });
+}
+document.getElementById("submit").onclick = function() {
+    saludoFinal();
+}
